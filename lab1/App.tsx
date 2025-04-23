@@ -70,9 +70,9 @@ import {
   ScrollView,
 } from 'react-native';
 
-import data from './data';
-import Square from './Square';
-import style from './style';
+import data from './Q4/data';
+import Square from './Q4/Square';
+import style from './Q4/style';
 
 import EmployeeForm from './Q6/EmployeeForm';
 import FindMinimum from './Q6/FindMinimum';
