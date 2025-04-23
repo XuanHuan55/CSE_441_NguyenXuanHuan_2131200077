@@ -1,64 +1,3 @@
-// /**
-//  * Sample React Native App
-//  * https://github.com/facebook/react-native
-//  *
-//  * @format
-//  */
-
-// import React from 'react';
-// import type {PropsWithChildren} from 'react';
-// import {
-//   SafeAreaView,
-//   ScrollView,
-//   StatusBar,
-//   StyleSheet,
-//   Text,
-//   useColorScheme,
-//   View,
-// } from 'react-native';
-
-// import {
-//   Colors,
-//   DebugInstructions,
-//   Header,
-//   LearnMoreLinks,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
-
-// import style from './style';
-// import data from './data';
-// import Square from './Square';
-
-// import EmployeeForm from './Q6/EmployeeForm';
-// import FindMinimum from './Q6/FindMinimum';
-// import HailstoneSequence from './Q6/HailstoneSequence';
-// import SumFirstLastDigit from './Q6/SumFirstLast';
-
-// function App(): React.JSX.Element {
-//   return (
-//     <View>
-//     <ScrollView>
-//       {data.map((item, index) => (
-//         <Square key={item} text={`Square ${index + 1}`} />
-//       ))}
-//     </ScrollView>
-//     <SafeAreaView style={{ flex: 1 }}>
-//       <EmployeeForm onUpdate={function (name: string, age: number, job: string): void {
-//         throw new Error('Function not implemented.');
-//       } } />
-//       <FindMinimum />
-//       <HailstoneSequence />
-//       <SumFirstLastDigit />
-//   </SafeAreaView>
-//   </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-  
-// });
-
-// export default App;
 
 import React, { useState } from 'react';
 import {
@@ -106,9 +45,9 @@ function App() {
             />
             {employeeInfo && (
               <View>
-                <Text><b>Name:</b> {employeeInfo.name}</Text>
-                <Text><b>Age: </b>{employeeInfo.age}</Text>
-                <Text><b>Job:</b> {employeeInfo.job}</Text>
+                <Text>Name: {employeeInfo.name}</Text>
+                <Text>Age:{employeeInfo.age}</Text>
+                <Text>Job:{employeeInfo.job}</Text>
               </View>
             )}
           </View>
@@ -121,7 +60,7 @@ function App() {
         return <HailstoneSequence />;
       default:
         return (
-          ""
+          "..."
         );
     }
   };
